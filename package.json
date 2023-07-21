@@ -7,7 +7,7 @@
     "node": "18"
   },
   "scripts": {
-    "start": "server.js"
+    "start": "nodemon server.js"
   },
   "author": "",
   "license": "ISC",

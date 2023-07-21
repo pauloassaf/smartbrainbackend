@@ -2,9 +2,12 @@
   "name": "smartbrainapi",
   "version": "1.0.0",
   "description": "",
-  "main": "server.js",
+  "main": "index.js",
+  "engines": {
+    "node": "18"
+  },
   "scripts": {
-    "start": "nodemon server.js"
+    "start": "server.js"
   },
   "author": "",
   "license": "ISC",

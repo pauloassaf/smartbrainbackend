@@ -6,7 +6,7 @@ const salt = bcrypt.genSaltSync(10);
 const knex = require('knex')({
     client: 'pg',
     connection: {
-      conectionString: process.env.DATABASE_URL,
+      connectionString: process.env.DATABASE_URL,
       ssl: { rejectUnauthorized: false },
       host: process.env.DATABASE_HOST,
       port : 5432,
@@ -15,6 +15,7 @@ const knex = require('knex')({
       database : process.env.DATABASE_DB,
     }
 });
+
 const register = require('./controllers/register');
 const signin = require('./controllers/signin');
 const profile = require('./controllers/profile');
